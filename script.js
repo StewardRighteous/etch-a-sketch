@@ -10,7 +10,7 @@ for(let i=0; i<256; i++){
 const grid = container.childNodes;
 
 grid.forEach((box)=>{
-    box.addEventListener("click", (event)=>{
+    box.addEventListener("mouseover", (event)=>{
         event.target.className = "select";
     })
 });
