@@ -9,12 +9,12 @@ body{
 .container{
     display: flex;
     flex-flow: row wrap;
-    width: 960px;
+    max-width: 960px;
 }
 
 .box, .select{
     height: 60px;
-    width: 60px;
+    width: calc(100% * (1/16));
     box-sizing: border-box;
     border: 2px solid black;
     background-color: white;
