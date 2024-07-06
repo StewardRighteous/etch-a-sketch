@@ -15,7 +15,7 @@ body{
 
 .box, .select{
     aspect-ratio: 1/1;
-    width: calc(100% * (1/100));
+    width: calc(100% * (1/16));
     box-sizing: border-box;
     border: 2px solid black;
     background-color: white;
