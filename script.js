@@ -6,3 +6,11 @@ for(let i=0; i<256; i++){
     box[i].className = "box";
     container.appendChild(box[i]);
 }
+
+const grid = document.querySelectorAll("div.container"); 
+
+grid.forEach((box)=>{
+    box.addEventListener("click", (event)=>{
+        event.target.className = "select";
+    });
+});
