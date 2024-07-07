@@ -10,18 +10,18 @@ body{
     display: flex;
     flex-flow: row wrap;
     width: 960px;
+    border: 5px solid black;
 }
 
 .box, .select{
     aspect-ratio: 1/1;
-    width: calc(100% * (1/16));
+    width: calc(100% * (1/64));
     box-sizing: border-box;
-    border: 2px solid black;
     background-color: white;
 }
 
 .select{
-    background-color: gray;
+    background-color: rgb(27, 26, 26);
 }
 
 button{

@@ -38,10 +38,10 @@ function newSketchPad(){
 
 // Removing already existing elements from grid to create new
 function removeAllElements(){
-    let noOfElements = box.length;
-    for(let i=0; i< noOfElements; i++){
-        container.removeChild(box[i]);
-    }
+   const boxElements = document.querySelectorAll("div.box, div.select");
+   boxElements.forEach((element)=> {
+        container.removeChild(element);
+   });
 }
 
-sketchPad(16);
+sketchPad(2);
