@@ -19,7 +19,9 @@ function sketchPad(boxPerRow){
     const grid = container.childNodes;
     grid.forEach((box)=>{
         box.addEventListener("mouseover", (event)=>{
+            color = `rgb(${Math.floor(Math.random() * 256) }, ${Math.floor(Math.random() * 256) }, ${Math.floor(Math.random() * 256) })`;
             event.target.className = "select";
+            event.target.style.backgroundColor = color;
         })
     });
 }
@@ -44,4 +46,4 @@ function removeAllElements(){
    });
 }
 
-sketchPad(2);
+sketchPad(64);
