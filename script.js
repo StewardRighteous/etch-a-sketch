@@ -21,7 +21,9 @@ function sketchPad(boxPerRow){
     let darkeningEffect = 0.0;
     grid.forEach((box)=>{
         box.addEventListener("mouseover", (event)=>{
+            color = `rgb(${Math.floor(Math.random() * 256) }, ${Math.floor(Math.random() * 256) }, ${Math.floor(Math.random() * 256) })`;
             event.target.className = "select";
+            event.target.style.backgroundColor = color;
             darkeningEffect = darkeningEffect + 0.1;
             event.target.style.opacity = darkeningEffect;
         })
